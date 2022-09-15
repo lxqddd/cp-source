@@ -1,0 +1,45 @@
+{
+  "name": "cp-source",
+  "version": "0.0.1",
+  "description": "copy source",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node ./src/index.ts",
+    "build": "tsc"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "package.json",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lxqddd/cp-source.git"
+  },
+  "keywords": [
+    "copy",
+    "copy file",
+    "copy directory",
+    "cp",
+    "cp-file"
+  ],
+  "author": "向阳",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lxqddd/cp-source/issues"
+  },
+  "homepage": "https://github.com/lxqddd/cp-source#readme",
+  "devDependencies": {
+    "@types/node": "^18.7.18",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "*"
+  }
+}
