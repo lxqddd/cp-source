@@ -2,16 +2,19 @@
   "name": "cp-source",
   "version": "0.0.1",
   "description": "copy source",
-  "main": "dist/index.js",
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.m.js",
+  "exports": {
+    "require": "./dist/index.js",
+    "import": "./dist/index.mjs"
+  },
   "scripts": {
     "dev": "ts-node ./src/index.ts",
-    "build": "tsc"
+    "build": "tsup"
   },
   "files": [
-    "dist/",
-    "README.md",
-    "package.json",
-    "LICENSE"
+    "dist"
   ],
   "repository": {
     "type": "git",
@@ -40,6 +43,7 @@
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "ts-node": "^10.9.1",
+    "tsup": "^6.2.3",
     "typescript": "*"
   }
 }
