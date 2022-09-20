@@ -1,18 +1,7 @@
-import fs from 'fs'
+import * as fs from 'fs-extra'
 import path from 'path'
+import { mkDestination } from '../utils'
 
-function resolvePath(source: string) {
-  if (!path.isAbsolute(source)) {
-    return path.resolve(__dirname, source)
-  }
-  return source
-}
-
-function mkDestination(source: string, destination: string) {
-  source = resolvePath(source)
-  destination = path.resolve(resolvePath(destination), path.basename(source))
-  return [source, destination]
-}
 
 export function cpFile(source: string, destination: string) {
   const [newSource, newDestination] = mkDestination(source, destination)
@@ -57,6 +46,6 @@ export function cpSource(source: string | string[], destination: string) {
       }
     }
   } else {
-    throw new Error('资源来源路径只能是字符串或数组')
+    throw new Error('The resource source path can only be a file path or a directory path.')
   }
 }

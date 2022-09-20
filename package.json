@@ -12,7 +12,8 @@
   "scripts": {
     "dev": "ts-node ./src/index.ts",
     "build": "tsup",
-    "test": "vitest"
+    "test": "vitest",
+    "lint": "eslint --fix"
   },
   "files": [
     "dist"
@@ -35,6 +36,7 @@
   },
   "homepage": "https://github.com/lxqddd/cp-source#readme",
   "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
     "@types/node": "^18.7.18",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
@@ -47,5 +49,8 @@
     "tsup": "^6.2.3",
     "typescript": "*",
     "vitest": "^0.23.4"
+  },
+  "dependencies": {
+    "fs-extra": "^10.1.0"
   }
 }
