@@ -11,7 +11,8 @@
   },
   "scripts": {
     "dev": "ts-node ./src/index.ts",
-    "build": "tsup"
+    "build": "tsup",
+    "test": "vitest"
   },
   "files": [
     "dist"
@@ -44,6 +45,7 @@
     "eslint-plugin-promise": "^6.0.0",
     "ts-node": "^10.9.1",
     "tsup": "^6.2.3",
-    "typescript": "*"
+    "typescript": "*",
+    "vitest": "^0.23.4"
   }
 }
